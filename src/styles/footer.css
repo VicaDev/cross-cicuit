@@ -1,0 +1,19 @@
+footer {
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 4rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.copy {
+    font-size: 1.3rem;
+    color: #fff;
+}

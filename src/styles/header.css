@@ -1,0 +1,79 @@
+
+.content-header {
+    background-image: url('https://edp-e-ne-p-bridgestone.azureedge.net/-/media/Images/Bridgestone/MC/Product-Families/Background-Images/Desktop/BS_Website_RangeHeader_D_1920x580_Motocross.ashx?vs=1&d=20170111T170706Z&la=es-es');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 10rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.info-header {
+    border-bottom: solid .1rem rgb(255, 193, 100);
+    margin: 0 2rem 0 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.icons {
+    font-size: 2rem;
+}
+
+.contact-header {
+    margin: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: .1rem .1rem .2rem #000, 0 0 1rem #000, 0 0 0.2rem #000;
+}
+
+.logo {
+    margin-left: auto;
+    font-size: 4rem;
+    color: #fff;
+    transition: transform .5s ease;
+    text-shadow: .1rem .1rem .2rem #000, 0 0 1rem #000, 0 0 0.2rem #000;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+span {
+    color: rgb(163, 163, 163);;
+}
+
+.navegation {
+    display: block;
+    text-align: left;
+    padding-top: 2rem;
+}
+
+a {
+    color: #fff;
+    margin-left: 6rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor:pointer;
+    transition: color .5s ease;
+    text-shadow: .1rem .1rem .2rem #000, 0 0 1rem #000, 0 0 0.2rem #000;
+}
+
+a:hover {
+    color: rgb(255, 187, 0);
+}
+
+.paragraph-header {
+    text-align: left;
+    font-weight: 700;
+    width: 50%;
+    margin: 5rem 0 0 5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: .1rem .1rem .2rem #000, 0 0 1rem #000, 0 0 0.2rem #000;
+}

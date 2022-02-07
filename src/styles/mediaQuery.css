@@ -1,0 +1,109 @@
+@media (max-width: 1023px) {
+    a {
+        margin-left: 3rem;
+    }
+
+    .paragraph-header {
+        display: none !important;
+    }
+
+    .content-index {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        margin-top: 5rem;
+    }
+
+    .image {
+        width: 90% !important;
+        border-radius: 1rem;
+        box-shadow: -.5rem .5rem 1rem rgba(0, 0, 0, 0.8);
+    }
+
+    .info-index {
+        width: 90% !important;        
+    }
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 40rem;
+    }
+
+    textarea {
+        width: 40rem;
+    }
+
+    .map {
+        margin-top: 6rem;
+        margin-right: 5.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .content-header {
+        background-image: url('https://s3.eu-west-1.amazonaws.com/cdn.motorbikemag.es/wp-content/uploads/2021/07/Yamaha-YZ250F-2022-motocross-2.jpg') !important;
+        background-size:contain;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons {
+        color: #fff !important;
+    }
+
+    a {
+        margin: 1rem !important;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .paragraph-header {
+        display: none !important;
+    }  
+
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 25rem;
+    }
+
+    textarea {
+        width: 25rem;
+    }
+
+    .map {
+        width: 80%;
+        align-items: center;
+    }
+
+    footer {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+}
