@@ -26,9 +26,8 @@
         width: 90% !important;        
     }
     .content-contact {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
@@ -41,22 +40,39 @@
     }
 
     .map {
-        margin-top: 6rem;
+        margin-top: 6rem !important;
         margin-right: 5.5rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     body {
-      margin: 0;
-      padding: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .content-header {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
     }
 
+    footer {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
     .content-header {
         background-image: url('https://s3.eu-west-1.amazonaws.com/cdn.motorbikemag.es/wp-content/uploads/2021/07/Yamaha-YZ250F-2022-motocross-2.jpg') !important;
         background-size:contain;
-        border-top-left-radius: 0 !important;
-        border-top-right-radius: 0 !important;
+    }
+    
+    .navegation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .container {
@@ -83,10 +99,9 @@
     }  
 
     .content-contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        
     }
 
     input {
@@ -98,12 +113,8 @@
     }
 
     .map {
-        width: 80%;
+        width: 80% !important;
         align-items: center;
-    }
-
-    footer {
-        border-bottom-left-radius: 0 !important;
-        border-bottom-right-radius: 0 !important;
+        margin-top: 6rem !important;
     }
 }

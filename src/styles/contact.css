@@ -16,12 +16,33 @@ label {
     font-weight: 700;
     margin-top: 1.5rem;
 }
+
+input {
+    outline: none;
+}
+
 textarea {
     height: 20rem;
+    outline: none;
 }
 
 .text-form {
     text-align: center;
+}
+
+button {
+    border: none;
+    width: 10rem;
+}
+
+.button {
+    margin-top: 2rem !important;
+    width: 10rem;
+    background-color: #2b2b2b !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 1.5rem !important;
+    border: none !important;
 }
 
 .map {

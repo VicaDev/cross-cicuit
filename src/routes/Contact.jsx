@@ -1,19 +1,51 @@
+import { useState } from 'react'
 import '../styles/contact.css'
+import emailjs from '@emailjs/browser';
+import Button from '@mui/material/Button'
+import { Icon } from '@iconify/react';
+
 
 export default function Contact() {
+
+    const formContact = { name:'', email:'', matter:'', message:'' }
+    const [contact, setContact] = useState(formContact)
+    const [showMessage, setShowMessage] = useState(false)
+    const handleChange = e => {
+        const { name, value } = e.target
+        setContact({ ...contact, [name]:value })
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault()
+
+        emailjs.send('default_service', 'contact_form', contact, 'user_0hkvsrsL0itbpPoP3sXJJ')
+            .then(response => {
+                console.log('Success!!', response.status, response.text)
+                setContact(formContact)
+                setShowMessage(true)
+            }, err => {
+                console.log('Failed...', err)
+            })
+    }
+
     return(
         <div className='content'>
             <h1>Aquí va el Contacto</h1>
             <div className="content-contact">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label for='name'>Nombre:</label>
-                    <input className='text-form' id="name" name="name" type='text' placeholder='Introduce tu nombre...' />
+                    <input required className='text-form' id="name" name="name" value={contact.name} onChange={handleChange} type='text' placeholder='Introduce tu nombre...' />
                     <label for='matter'>Asunto:</label>
-                    <input className='text-form' id="matter" name="matter" type='text' placeholder='Introduce el asunto...' />
+                    <input required className='text-form' id="matter" name="matter" value={contact.matter} onChange={handleChange} type='text' placeholder='Introduce el asunto...' />
                     <label for='email'>Correo:</label>
-                    <input className='text-form' id="email" name="email" type='email' placeholder='Introduce tu correo...' />
+                    <input required className='text-form' id="email" name="email" value={contact.email} onChange={handleChange} type='email' placeholder='Introduce tu correo...' />
                     <label for='message'>Mensaje</label>
-                    <textarea className='text-form' id="message" placeholder="Introduce el mensaje..." />
+                    <textarea required className='text-form' onChange={handleChange} name="message" value={contact.message} id="message" placeholder="Introduce el mensaje..." />
+
+                    <button>
+                    <Button onSubmit={handleSubmit} className='button' variant="outlined" endIcon={<Icon icon="fluent:send-24-filled" color="#fff" />}>Enviar</Button>
+                    </button>
+                    {showMessage ? <div className='alert' role="alert">Enviado Correctamente</div>: ``}
                 </form>
 
                 <iframe 

@@ -1,11 +1,9 @@
-import Button from '@mui/material/Button'
 import '../styles/timetable.css'
 
 export default function Expenses() {
     return(
         <div style={{paddingTop: '20rem'}}>
             <h1>Aqui van los precios</h1>
-            <Button variant="contained">Hello World</Button>
             <table>
                 <tr>
                     <td>Lunes</td>
