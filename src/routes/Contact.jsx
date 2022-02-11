@@ -7,7 +7,9 @@ import { Icon } from '@iconify/react';
 
 export default function Contact() {
 
-    const formContact = { name:'', email:'', matter:'', message:'' }
+    // TEngo qeu arreglar el formulario cuando se envia, ya que no envia ni nombre, ni asunto ni correo
+
+    const formContact = { user_name:'', user_email:'', user_matter:'', message:'' }
     const [contact, setContact] = useState(formContact)
     const [showMessage, setShowMessage] = useState(false)
     const handleChange = e => {
@@ -18,7 +20,7 @@ export default function Contact() {
     const handleSubmit = e => {
         e.preventDefault()
 
-        emailjs.send('default_service', 'contact_form', contact, 'user_0hkvsrsL0itbpPoP3sXJJ')
+        emailjs.send('contact_service', 'contact_form', contact, 'user_0hkvsrsL0itbpPoP3sXJJ')
             .then(response => {
                 console.log('Success!!', response.status, response.text)
                 setContact(formContact)
@@ -34,11 +36,11 @@ export default function Contact() {
             <div className="content-contact">
                 <form onSubmit={handleSubmit}>
                     <label for='name'>Nombre:</label>
-                    <input required className='text-form' id="name" name="name" value={contact.name} onChange={handleChange} type='text' placeholder='Introduce tu nombre...' />
+                    <input required className='text-form' id="name" name="user_name" value={contact.name} onChange={handleChange} type='text' placeholder='Introduce tu nombre...' />
                     <label for='matter'>Asunto:</label>
-                    <input required className='text-form' id="matter" name="matter" value={contact.matter} onChange={handleChange} type='text' placeholder='Introduce el asunto...' />
+                    <input required className='text-form' id="matter" name="user_matter" value={contact.matter} onChange={handleChange} type='text' placeholder='Introduce el asunto...' />
                     <label for='email'>Correo:</label>
-                    <input required className='text-form' id="email" name="email" value={contact.email} onChange={handleChange} type='email' placeholder='Introduce tu correo...' />
+                    <input required className='text-form' id="email" name="user_email" value={contact.email} onChange={handleChange} type='email' placeholder='Introduce tu correo...' />
                     <label for='message'>Mensaje</label>
                     <textarea required className='text-form' onChange={handleChange} name="message" value={contact.message} id="message" placeholder="Introduce el mensaje..." />
 

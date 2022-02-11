@@ -15,7 +15,7 @@ export default function Header() {
             </div>
             <nav className="navegation">
                 <Link to='/index'>Inicio</Link>
-                <Link to='/expenses'>Horario</Link>
+                <Link to='/expenses'>Galería</Link>
                 <Link to='/contact'>Contacto</Link>
             </nav>
 
