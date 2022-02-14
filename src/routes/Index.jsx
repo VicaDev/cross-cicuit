@@ -1,5 +1,6 @@
 import img from '../img/circuito.jpg'
 import '../styles/index.css'
+import '../styles/mediaQuery.css'
 
 export default function Index() {
     return(
@@ -8,7 +9,17 @@ export default function Index() {
             <div className='content-index'>
                 <img className='image' src={img} alt={img} />
                 <p className='info-index'>
-                Nullam auctor dictum ipsum nec dictum. Vestibulum nisl est, efficitur sit amet euismod ac, porta eu mauris. Cras consectetur nulla vitae nulla feugiat, et rhoncus ligula pellentesque. Suspendisse neque libero, consectetur vel aliquet in, tempus id est. Proin id aliquet dolor, eget fringilla leo. Etiam faucibus felis id aliquet tincidunt. Duis semper, purus eget tempus elementum, est mi congue purus, vel facilisis nisl leo sagittis velit. Praesent ultricies dolor arcu, sit amet luctus leo elementum vel. Aenean cursus rutrum ligula, a varius enim tincidunt at. Nam porta felis a quam varius malesuada.
+                    Circuito de motocross situado en un entorno totalmente natural, dentro de una zona boscosa como ya no quedan.
+                    <br/>
+                    <br/>
+                    El circuito “El Carbonet”, en funcionamiento desde 1979 con diversas reformas a lo largo de los años, es de dificultad media.
+                    <br/>
+                    <br/>
+
+                    <strong>Alargada:</strong> 1200m<br/>
+                    <strong>Ancho mínimo:</strong> 6 a 7 metros<br/>
+                    <strong>Capacidad para entrenamientos:</strong> 50 pilotos<br/><br/>
+                    Consta de 12 saltos, terreno una parte dura y la otra blanda que absorbe muy bien la lluvia.
                 </p>
             </div>
         </div>

@@ -21,10 +21,12 @@ export default function Header() {
 
             <div className="container2">
                 <p className="paragraph-header">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Ex voluptatibus ea sapiente alias non molestiae laudantium excepturi,
                     itaque et ut deserunt a cum eveniet facilis atque animi laboriosam.
-                    Facilis, deleniti?
+                    Facilis, deleniti? */}
+
+                    Web del Club Moto VicaDev. Circuito de motocross abierto permanentemente todo el año.
                 </p>   
             </div>
                      
