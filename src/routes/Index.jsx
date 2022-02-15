@@ -1,6 +1,8 @@
 import img from '../img/circuito.jpg'
 import '../styles/index.css'
 import '../styles/mediaQuery.css'
+import video1 from '../video/moto1.mp4'
+import video2 from '../video/moto2.mp4'
 
 export default function Index() {
     return(
@@ -12,7 +14,7 @@ export default function Index() {
                     Circuito de motocross situado en un entorno totalmente natural, dentro de una zona boscosa como ya no quedan.
                     <br/>
                     <br/>
-                    El circuito “El Carbonet”, en funcionamiento desde 1979 con diversas reformas a lo largo de los años, es de dificultad media.
+                    El circuito “VicaDev”, en funcionamiento desde 1979 con diversas reformas a lo largo de los años, es de dificultad media.
                     <br/>
                     <br/>
 
@@ -20,8 +22,14 @@ export default function Index() {
                     <strong>Ancho mínimo:</strong> 6 a 7 metros<br/>
                     <strong>Capacidad para entrenamientos:</strong> 50 pilotos<br/><br/>
                     Consta de 12 saltos, terreno una parte dura y la otra blanda que absorbe muy bien la lluvia.
-                </p>
+                </p>                
             </div>
+            <video controls>
+                <source src={video1} type='video/mp4' />
+            </video>
+            <video controls>
+                <source src={video2} type='video/mp4' />
+            </video>
         </div>
     )
 }
